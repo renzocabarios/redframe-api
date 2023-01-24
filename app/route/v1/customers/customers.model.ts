@@ -16,7 +16,8 @@ const schema = new mongoose.Schema({
     },
     location: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: RESOURCE.LOCATIONS
+        ref: RESOURCE.LOCATIONS,
+        required: true
     },
     deleted: {
         type: Boolean,
