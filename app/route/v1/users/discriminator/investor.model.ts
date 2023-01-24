@@ -16,8 +16,13 @@ const schema = new mongoose.Schema({
         type: String,
         required: true
     },
-    cameras: {
-        type: [],
+    items: {
+        type: [
+            {
+                type: mongoose.Schema.Types.ObjectId,
+                ref: RESOURCE.ITEMS
+            },
+        ],
         default: true
     },
 }, options);
