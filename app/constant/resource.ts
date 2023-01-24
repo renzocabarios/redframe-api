@@ -6,4 +6,5 @@ export default {
     },
     CUSTOMERS: "Customers",
     LOCATIONS: "Locations",
+    ITEMS: "Items",
 };
