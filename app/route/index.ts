@@ -18,6 +18,10 @@ export const routes: IRoute[] = [
     {
         url: '/api/v1/customers',
         route: V1.customersRoute,
+    },
+    {
+        url: '/api/v1/locations',
+        route: V1.locationsRoute,
     }
 ]
 
