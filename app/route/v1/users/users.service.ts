@@ -1,4 +1,5 @@
 import model from "./users.model";
+import investor from "./discriminator/investor.model";
 
 const getAll = async (query: any) => {
   const { populate = "" } = query;
@@ -11,6 +12,7 @@ const getById = async (_id: string, query: any) => {
 };
 
 const add = async (body: any) => {
+  if (body.type == "investor") return await investor.create(body);
   return await model.create(body);
 };
 

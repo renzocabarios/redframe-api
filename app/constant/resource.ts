@@ -1,6 +1,9 @@
 export default {
     SAMPLE: "Sample",
-    USERS: "Users",
+    USERS: {
+        DEFAULT: "Users",
+        INVESTOR: "Investor",
+    },
     CUSTOMERS: "Customers",
     LOCATIONS: "Locations",
 };

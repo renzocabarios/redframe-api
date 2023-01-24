@@ -1,6 +1,11 @@
 import mongoose from "mongoose";
 import { RESOURCE } from "../../../constant";
 
+const options = {
+    discriminatorKey: 'type',
+    timeStamps: true
+};
+
 const schema = new mongoose.Schema({
     email: {
         type: String,
@@ -15,6 +20,6 @@ const schema = new mongoose.Schema({
         type: Boolean,
         default: false
     },
-});
+}, options);
 
-export default mongoose.model(RESOURCE.USERS, schema);
+export default mongoose.model(RESOURCE.USERS.DEFAULT, schema);
