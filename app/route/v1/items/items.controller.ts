@@ -11,7 +11,6 @@ const getById = async (_req: Request<any>, _res: Response<any>) => {
   const { id } = _req.params;
   const data = await service.getById(id, _req.query);
   _res.send({ data: [data], status: "success", message: "Get item success" });
-
 };
 
 const add = async (_req: Request<any>, _res: Response<any>) => {

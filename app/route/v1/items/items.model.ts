@@ -2,20 +2,11 @@ import mongoose from "mongoose";
 import { RESOURCE } from "../../../constant";
 
 const schema = new mongoose.Schema({
-    model: {
+    title: {
         type: String,
         required: true
     },
-    investor: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: RESOURCE.USERS.INVESTOR,
-        required: true
-    },
-    available: {
-        type: Boolean,
-        default: true
-    },
-    rent: {
+    cost: {
         type: Number,
         default: 0.00
     },
@@ -25,4 +16,4 @@ const schema = new mongoose.Schema({
     },
 });
 
-export default mongoose.model(RESOURCE.CUSTOMERS, schema);
+export default mongoose.model(RESOURCE.ITEMS, schema);
