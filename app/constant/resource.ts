@@ -7,4 +7,7 @@ export default {
     CUSTOMERS: "Customers",
     LOCATIONS: "Locations",
     ITEMS: "Items",
+    PAYMENTS: "Payments",
+    DELIVERIES: "Deliveries",
+    RENTS: "Rents",
 };

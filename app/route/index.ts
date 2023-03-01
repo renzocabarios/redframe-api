@@ -26,6 +26,18 @@ export const routes: IRoute[] = [
     {
         url: '/api/v1/items',
         route: V1.itemsRoute,
+    },
+    {
+        url: '/api/v1/payments',
+        route: V1.paymentsRoute,
+    },
+    {
+        url: '/api/v1/deliveries',
+        route: V1.deliveriesRoute,
+    },
+    {
+        url: '/api/v1/rents',
+        route: V1.rentsRoute,
     }
 ]
 
